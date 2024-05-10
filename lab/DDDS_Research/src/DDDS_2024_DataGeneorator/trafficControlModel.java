@@ -8,6 +8,8 @@ import java.util.Random;
 import genDevs.modeling.*;
 import GenCol.*;
 
+//Multi-Agent System
+
 public class trafficControlModel extends ViewableAtomic{
 	double maxElapseTimeWhenBusy_W2E = model_configData.maxElapseTimeWhenBusy_W2E;
 	double maxElapseTimeWhenBusy_E2W = model_configData.maxElapseTimeWhenBusy_E2W;
