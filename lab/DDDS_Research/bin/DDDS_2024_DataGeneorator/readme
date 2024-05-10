@@ -1,0 +1,38 @@
+Number of PF steps and step interval are defined in the PF_configData.java
+
+Generate observation data and true state data
+   -- Run the test.java by instantiating the trafficControlSys_Real model. 
+   -- Case I and Case II random seeds are defined in model_configData.java
+   -- the data are saved by the transducer_real_dataSaving.java
+   -- Note: to store the traffic delay time for comparing with the traffic delay time prediction,
+       the simulation adds extra 2000s (see the simulate_TN() in the main()). This extra time does not 
+       influence the observation data used in DA . 
+          
+Run particle filter to estimate state
+  -- run the PF.java 
+  -- If using different number of measurement data, change the computeWeight(). 
+  -- the DA results are saved by the DAResult0.txt file
+  -- If running DA for multiple time (i.e., the batch run case), modify the main() of the PF.java
+  
+Parameter estimation -- static parameter case
+  -- Generate observation data and true state data in the same way as described above 
+  -- When running the PF.java to estimate the state, modify the corresponding code related to 
+      the carPassingTime_mean in the samplingAndComputeWeights(). Specifically, in step0, the 
+      carPassingTime_mean should randomly sampled; in other steps, need to add Gaussian noise to the carPassingTime_mean.
+      Note: for the static parameter, the Gaussian noise has carPassingTimeChg_Sigma = 0.1
+
+Parameter estimation -- dynamic parameter case
+  -- Generate observation data and true state data using the trafficControlModel model that has a dynamic carPassingTime_mean.
+       Specifically, change the carPassingTime_mean in the deltint() method. 
+  -- When running the PF.java in the same way as in the static parameter case described above. However, 
+      set the Gaussian noise to have carPassingTimeChg_Sigma = 0.3. Also, make sure the code related to the 
+      carPassingTime_mean in the deltint() method is disabled. 
+      
+Traffic delay time prediction 
+  -- run the RTPrediction_fromParticleData.java, which read each steps particle data and do the predictions. 
+  -- Note1: the current implementation assumes the particle data are stored in "run0_step_"+i+".txt"
+  -- Note2: the RTPrediction_fromParticleData uses trafficControlSys_RTPrediction, which 
+       add two special cars at the end of the queue
+  -- the prediction results are stored in RTPredictionResult.txt
+  -- The RTPrediction_ResultAnalysis.java is to analyze the prediction results to compute statistic measures
+      

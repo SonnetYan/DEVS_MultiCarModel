@@ -1,0 +1,29 @@
+package Chapter6_Tutorial_CrossingTimeParameter;
+
+import java.util.Random;
+
+public class GlobalRef {
+	
+	static GlobalRef ref=null;
+	long ranSeed = 123456;
+	protected Random r;
+
+	
+	
+	private GlobalRef() {
+	}
+	
+	public static GlobalRef getInstance() {
+		if(ref==null) {
+			ref= new GlobalRef();
+		}
+		return ref;
+	}
+	
+	public void createRandom(long sd) {
+		ranSeed=sd;
+		r = new Random(ranSeed);
+		
+	}
+
+}

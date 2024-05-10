@@ -1,0 +1,51 @@
+package Homework2022.PredatorPrey.MYan2;
+
+import GenCol.doubleEnt;
+import GenCol.entity;
+import GenCol.intEnt;
+
+public class sheepGreassEntity extends entity {
+
+	    
+	   
+	    protected double leftSheepLifeT;
+	    protected double leftSheepMoveT;
+	    protected double leftSheepReproduceT;
+	    protected int sheepNum;
+	    
+	    protected boolean smart;
+
+	    public sheepGreassEntity() {
+	        this("sheep", 0, true, 0,0,0);
+	    }
+
+	    public sheepGreassEntity(String name, int _sheepNum, boolean _smart,double _leftSheepLifeT,double _leftSheepMoveT, double _leftSheepReproduceT) {
+	        super(name);
+	        sheepNum = _sheepNum;
+	        smart = _smart;
+	        leftSheepLifeT = _leftSheepLifeT;
+	        leftSheepMoveT = _leftSheepMoveT;
+	        leftSheepReproduceT = _leftSheepReproduceT;
+	       
+	    }
+	    public int getsheepNum() {
+	        return sheepNum;
+	    }
+	    public double getLeftLifeTime(){
+	    	return leftSheepLifeT;
+	    }
+	    public double getLeftMoveTime(){
+	    	return leftSheepMoveT;
+	    }
+	    public double getLeftReproduceT() {
+	    	return leftSheepReproduceT;
+	    }
+	    public boolean getIsSheepSmart(){
+	    	return smart;
+	    }
+//	    public String toString() {
+//	        return name + "_num_Items_" + (double) ((int) (getItems()));
+//
+//	    }
+
+}

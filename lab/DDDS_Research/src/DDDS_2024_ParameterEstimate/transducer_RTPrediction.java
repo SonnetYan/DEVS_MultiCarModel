@@ -1,0 +1,82 @@
+/**
+ * This class implements an atomic model for the forest fire igniter.
+ * It sends and ignition signal to a specified cell (cell id) in the cell space
+ * The cell ignites based on the fireline intensity value for that cell (> 45kW/m)
+ *
+ * author: Lewis Ntaimo
+ * Date: May 7, 2003
+ * Extended by: Yi Sun, Xiaolin Hu, Sept. 2007
+ */
+package DDDS_2024_ParameterEstimate;
+
+import GenCol.entity;
+import genDevs.modeling.*;
+import simView.*;
+
+public class transducer_RTPrediction extends ViewableAtomic{ 
+
+	double eastMovingCar_processingTime = -1;
+	double westMovingCar_processingTime = -1; 
+	
+	boolean eastMovRTPCarReceived = false;
+	boolean westMovRTPCarReceived = false;
+	
+	public transducer_RTPrediction(){
+		this("transducer_RTPrediction");		
+	}
+
+
+	public transducer_RTPrediction(String nm){
+		super(nm);    
+		addInport("eastMoving_in");
+		addInport("westMoving_in");
+		addInport("eastMoving_out");    
+		addInport("westMoving_out");    
+
+	}
+
+
+	public void initialize(){
+		passivateIn("waiting");
+	}
+
+	public void deltext(double e,message x){
+		Continue(e);
+		for (int i = 0; i < x.getLength(); i++) {
+			if (messageOnPort(x, "eastMoving_out", i)) {
+				entity ent = x.getValOnPort("eastMoving_out", i);
+				if(ent.getName().endsWith("RTPrediction")) {
+					eastMovingCar_processingTime = this.getSimulationTime();
+					eastMovRTPCarReceived= true;
+				}
+			}
+			else if (messageOnPort(x, "westMoving_out", i)) {
+				entity ent = x.getValOnPort("westMoving_out", i);
+				if(ent.getName().endsWith("RTPrediction")) {
+					westMovingCar_processingTime = this.getSimulationTime();
+					westMovRTPCarReceived=true;
+				}
+			}
+		}
+		
+		if(westMovRTPCarReceived && eastMovRTPCarReceived) // both cars have been received. No need to simulate further
+			holdIn("stopSimulation", 0);
+	}
+
+	public void   deltint(){
+		passivate();
+	}
+
+
+	public message out(){
+		message m = super.out();
+		if(phaseIs("stopSimulation"))
+			m.add(makeContent("out", new entity("stop")));
+		return m;
+	}
+
+
+}
+
+
+

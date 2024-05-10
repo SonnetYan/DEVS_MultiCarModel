@@ -1,0 +1,54 @@
+package Chapter6_Tutorial_CrossingTimeParameter;
+
+import  java.util.Random;
+//public interface model_configData {
+public interface model_configData {
+		
+	static double maxElapseTimeWhenBusy = 120;
+
+	static double carPassingTime_mean = 4.0;//2.0;//2.0; //1.5;// ---- this is used if treating car passing as a truncated normal distribution between low and high
+	static double carPassingTime_sigma = 0.5;//0.1;//1.0; //  ---- this is used if treating car passing as a truncated normal distribution between low and high
+	static double carPassingTime_rangeDelta = 1.0;//2.0; // Pluse minus 0.1 from mean
+	static double carPassingTime_LowBound = 2.0;//0.15;//1.0; // 1 second ---- this is used if treating car passing as a truncated normal distribution between low and high
+	static double carPassingTime_UpBound = 10.0;//0.35;//3.0; // 5 seconds ---- this is used if treating car passing as a truncated normal distribution between low and high
+
+    /**
+     * For street A generator -- for greenTime_streetA=36, greenTime_streetB=24
+     * lambda = 1/7.0 ----> queue increases over time but not out of control
+     * lambda = 1/8.0 ----> queue seems to be balanced 
+     * lambda = 1/10.0 ----> queue is empty frequently
+     *  
+     * For street B generator
+     * lambda = 1/11.0 ----> queue seems to be balanced 
+     *  
+     */    
+	static double generator_eastMoving_lambda = 1.0/7.0;//1.0/8.0;// 0.3/2;
+	static double generator_westMoving_lambda = 1.0/10.0;  // 1 vehicle per 12 seconds 
+
+	/**
+	 * Case 1 random number seed
+	 */
+//	static long randSeed_eastMoving = 8123997;
+//	static long randSeed_westMoving = 512799;
+//	static long randSeed_IntersectionM = 3987979;
+	
+//	static long  curTime = System.currentTimeMillis();
+//	static long curRd = Math.abs(new Random(curTime).nextInt());
+//	static long randSeed_eastMoving = curRd;
+//	static long randSeed_westMoving = Math.abs(new Random(curRd/2+6352).nextInt());
+//	static long randSeed_IntersectionM = Math.abs(new Random(randSeed_westMoving).nextInt());
+	
+	/**
+	 * Case 2 random number seed
+	 */
+//	long randSeed_eastMoving = 21111;
+//	long randSeed_westMoving = 222;
+//	long randSeed_IntersectionM = 333;
+}
+
+
+
+
+
+
+

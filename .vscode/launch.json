@@ -1,0 +1,700 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Paper2024_ExampleGenerator_UI",
+            "request": "launch",
+            "mainClass": "DDDS_2024_DataGeneorator.Paper2024_ExampleGenerator_UI",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF_UI",
+            "request": "launch",
+            "mainClass": "DDDS_2024_ParameterEstimate.PF_UI",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF",
+            "request": "launch",
+            "mainClass": "DDDS_2024_ParameterEstimate.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "Paper2024_ExampleGenerator",
+            "request": "launch",
+            "mainClass": "DDDS_2024_DataGeneorator.Paper2024_ExampleGenerator",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "DDDS_2024_DataGeneorator.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "TestRunnerUI",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_DataGeneorator.TestRunnerUI",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "PF",
+            "request": "launch",
+            "mainClass": "DDDS_ML_Comparision2.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis",
+            "request": "launch",
+            "mainClass": "DDDS_ML_Comparision2.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData",
+            "request": "launch",
+            "mainClass": "DDDS_ML_Comparision2.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "DDDS_ML_Comparision2.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(1)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_DataGeneorator.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(1)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_DataGeneorator.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test(1)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_DataGeneorator.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(2)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_DataGeneorator_SeriesBatch.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(2)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_DataGeneorator_SeriesBatch.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test(2)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_DataGeneorator_SeriesBatch.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(3)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_Daynamic_DataGeneorator.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(3)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_Daynamic_DataGeneorator.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test(3)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_Daynamic_DataGeneorator.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF(1)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_DA_carPassingTime.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(4)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_DA_carPassingTime.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(4)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_DA_carPassingTime.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF(2)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_DA_carPassingTime_SeriesBatch.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(5)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_DA_carPassingTime_SeriesBatch.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(5)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_DA_carPassingTime_SeriesBatch.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF(3)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_PE_carPassingTime.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(6)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_PE_carPassingTime.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(6)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_PE_carPassingTime.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF(4)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_PE_carPassingTime_SeriesBatch.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(7)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_PE_carPassingTime_SeriesBatch.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(7)",
+            "request": "launch",
+            "mainClass": "DDDS_Paper_Various_PF_PE_carPassingTime_SeriesBatch.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test(4)",
+            "request": "launch",
+            "mainClass": "DEVSJAVALab.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "testCollection",
+            "request": "launch",
+            "mainClass": "GenCol.testCollection",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "testGeneral",
+            "request": "launch",
+            "mainClass": "GenCol.testGeneral",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "threadEnsembleList",
+            "request": "launch",
+            "mainClass": "GenCol.threadEnsembleList",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "threadEnsembleSet",
+            "request": "launch",
+            "mainClass": "GenCol.threadEnsembleSet",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "OrderedDigraphTest",
+            "request": "launch",
+            "mainClass": "GenDevsTest.OrderedDigraphTest",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "TestActivity",
+            "request": "launch",
+            "mainClass": "GenDevsTest.TestActivity",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "TestAtomic",
+            "request": "launch",
+            "mainClass": "GenDevsTest.TestAtomic",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "TestCoupled",
+            "request": "launch",
+            "mainClass": "GenDevsTest.TestCoupled",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "TestHierarchy",
+            "request": "launch",
+            "mainClass": "GenDevsTest.TestHierarchy",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "TwoGenr",
+            "request": "launch",
+            "mainClass": "GenDevsTest.TwoGenr",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "testRTActivity",
+            "request": "launch",
+            "mainClass": "GenDevsTest.testRTActivity",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "testRTAtomic",
+            "request": "launch",
+            "mainClass": "GenDevsTest.testRTAtomic",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "testRTCoupled",
+            "request": "launch",
+            "mainClass": "GenDevsTest.testRTCoupled",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "SheepGrassCellSpace",
+            "request": "launch",
+            "mainClass": "Homework2022.PredatorPrey.MYan2.SheepGrassCellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF(5)",
+            "request": "launch",
+            "mainClass": "Multi_DA_2weight_main.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(8)",
+            "request": "launch",
+            "mainClass": "Multi_DA_2weight_main.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(8)",
+            "request": "launch",
+            "mainClass": "Multi_DA_2weight_main.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test(5)",
+            "request": "launch",
+            "mainClass": "Multi_DA_2weight_main.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "PF(6)",
+            "request": "launch",
+            "mainClass": "Multi_PE_EAR_CP_2weight.PF",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_ResultAnalysis(9)",
+            "request": "launch",
+            "mainClass": "Multi_PE_EAR_CP_2weight.RTPrediction_ResultAnalysis",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "RTPrediction_fromParticleData(9)",
+            "request": "launch",
+            "mainClass": "Multi_PE_EAR_CP_2weight.RTPrediction_fromParticleData",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "test(6)",
+            "request": "launch",
+            "mainClass": "SimpArc.test",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "friendlyAtomic",
+            "request": "launch",
+            "mainClass": "genDevs.modeling.friendlyAtomic",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "DTSSCoord",
+            "request": "launch",
+            "mainClass": "genDevs.simulation.special.DTSSCoord",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "minEnvironment",
+            "request": "launch",
+            "mainClass": "genDevs.simulation.special.minEnvironment",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "minSel",
+            "request": "launch",
+            "mainClass": "genDevs.simulation.special.minSel",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "bigMinTreeExample",
+            "request": "launch",
+            "mainClass": "oneDCellSpace.bigMinTreeExample",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "diffuse2ndOrdCellSpace",
+            "request": "launch",
+            "mainClass": "oneDCellSpace.diffuse2ndOrdCellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "diffuseAggCellSpace",
+            "request": "launch",
+            "mainClass": "oneDCellSpace.diffuseAggCellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "diffuseRandCellSpace",
+            "request": "launch",
+            "mainClass": "oneDCellSpace.diffuseRandCellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "pascalCellSpace",
+            "request": "launch",
+            "mainClass": "oneDCellSpace.pascalCellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "pipeLineRand",
+            "request": "launch",
+            "mainClass": "oneDCellSpace.pipeLineRand",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "rule30CellSpace",
+            "request": "launch",
+            "mainClass": "oneDCellSpace.rule30CellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "average",
+            "request": "launch",
+            "mainClass": "pulseExpFrames.average",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "averageTime",
+            "request": "launch",
+            "mainClass": "pulseExpFrames.averageTime",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "instantReal",
+            "request": "launch",
+            "mainClass": "pulseExpFrames.instantReal",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "statCollector",
+            "request": "launch",
+            "mainClass": "pulseExpFrames.statCollector",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "sum",
+            "request": "launch",
+            "mainClass": "pulseExpFrames.sum",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "varDisplay",
+            "request": "launch",
+            "mainClass": "pulseExpFrames.varDisplay",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "GraphNode",
+            "request": "launch",
+            "mainClass": "pulseModels.GraphNode",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "binaryRep",
+            "request": "launch",
+            "mainClass": "pulseModels.binaryRep",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "bungeeJump",
+            "request": "launch",
+            "mainClass": "pulseModels.bungeeJump",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "fireOnceNeuron",
+            "request": "launch",
+            "mainClass": "pulseModels.fireOnceNeuron",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "harmOsc",
+            "request": "launch",
+            "mainClass": "pulseModels.harmOsc",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "instantReal(1)",
+            "request": "launch",
+            "mainClass": "pulseModels.instantReal",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "interestStiff",
+            "request": "launch",
+            "mainClass": "pulseModels.interestStiff",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "realDevs",
+            "request": "launch",
+            "mainClass": "pulseModels.realDevs",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "varGen",
+            "request": "launch",
+            "mainClass": "pulseModels.varGen",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "twoDDerivEnvir",
+            "request": "launch",
+            "mainClass": "quantization.twoDDerivEnvir",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "vect2DEnt",
+            "request": "launch",
+            "mainClass": "quantization.vect2DEnt",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "vectAim",
+            "request": "launch",
+            "mainClass": "quantization.vectAim",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "SimView",
+            "request": "launch",
+            "mainClass": "simView.SimView",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "randExpon",
+            "request": "launch",
+            "mainClass": "statistics.randExpon",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "randLogNormal",
+            "request": "launch",
+            "mainClass": "statistics.randLogNormal",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "randNormal",
+            "request": "launch",
+            "mainClass": "statistics.randNormal",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "randNormalPos",
+            "request": "launch",
+            "mainClass": "statistics.randNormalPos",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "randPareto",
+            "request": "launch",
+            "mainClass": "statistics.randPareto",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "randUniform",
+            "request": "launch",
+            "mainClass": "statistics.randUniform",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "statistics",
+            "request": "launch",
+            "mainClass": "statistics.statistics",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "lightSpreadCellSpace",
+            "request": "launch",
+            "mainClass": "twoDCellSpace.lightSpreadCellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "virusSpreadCellSpace",
+            "request": "launch",
+            "mainClass": "twoDCellSpace.virusSpreadCellSpace",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "OldModelConverter",
+            "request": "launch",
+            "mainClass": "util.OldModelConverter",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "StringUtil",
+            "request": "launch",
+            "mainClass": "util.StringUtil",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "doubleFormat",
+            "request": "launch",
+            "mainClass": "util.doubleFormat",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "fileConverter",
+            "request": "launch",
+            "mainClass": "util.fileConverter",
+            "projectName": "M&S"
+        },
+        {
+            "type": "java",
+            "name": "fileNames",
+            "request": "launch",
+            "mainClass": "util.fileNames",
+            "projectName": "M&S"
+        }
+    ]
+}

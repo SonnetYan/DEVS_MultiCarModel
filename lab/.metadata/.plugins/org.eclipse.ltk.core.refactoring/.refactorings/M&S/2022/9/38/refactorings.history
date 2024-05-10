@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;DDDS_ML_Comparision1&apos; to &apos;DDDS_ML_Comparision_copy&apos;&#x0D;&#x0A;- Original project: &apos;M&amp;S&apos;&#x0D;&#x0A;- Original element: &apos;M&amp;S/src/DDDS_ML_Comparision1&apos;&#x0D;&#x0A;- Renamed element: &apos;M&amp;S/src/DDDS_ML_Comparision_copy&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;DDDS_ML_Comparision1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;DDDS_ML_Comparision1" name="DDDS_ML_Comparision_copy" qualified="false" references="true" stamp="1663355316105" textual="false" version="1.0"/>
+</session>

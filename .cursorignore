@@ -1,0 +1,5 @@
+# Ignore all data folders under lab/DDDS_Research/DATA
+lab/DDDS_Research/DATA/
+
+# Ignore the root DATA folder
+/DATA
