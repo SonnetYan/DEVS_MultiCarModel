@@ -5,6 +5,7 @@ import GenCol.entity;
 public class Vehicle extends entity {
     private double position;
     protected double speed;
+    private String direction;
     private int type;  				//use a type to determine the speed: 1 means slow and 2 means fast
     private double coefficient = 1;
 
@@ -28,6 +29,7 @@ public class Vehicle extends entity {
         this.position = other.getPosition();
         this.speed = other.getSpeed();
         this.type = other.getType();
+        this.direction = other.getDirection();
     }
 
     public double getPosition() {
@@ -44,6 +46,14 @@ public class Vehicle extends entity {
 
     public void setSpeed(double speed) {
         this.speed = speed;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+
+    public String getDirection() {
+        return direction;
     }
 
     /**

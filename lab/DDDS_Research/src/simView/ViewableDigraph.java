@@ -446,7 +446,7 @@ public class ViewableDigraph
     public void layoutForSimView()
     {
         preferredSize = new Dimension(625, 341);
-        if((ViewableComponent)withName("HierarAtomicModel")!=null)
-             ((ViewableComponent)withName("HierarAtomicModel")).setPreferredLocation(new Point(196, 109));
+        if((ViewableComponent)withName("carGenr_W2E")!=null)
+             ((ViewableComponent)withName("carGenr_W2E")).setPreferredLocation(new Point(44, 150));
     }
 }

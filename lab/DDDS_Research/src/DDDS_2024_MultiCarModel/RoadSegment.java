@@ -39,11 +39,16 @@ public class RoadSegment extends ViewableAtomic {
     public RoadSegment(String nm) {
         super(nm);
         addInport("numberAhead");
-        addInport("in");
-        addInport("collectIn");
+        // addInport("in");
+        // addInport("collectIn");
         addOutport("number");
-        addOutport("out");
-        addOutport("observationOut");
+        // addOutport("out");
+        // addOutport("observationOut");
+
+        addInport("W2E_in");
+        addInport("E2W_in");
+        addOutport("W2E_out");    
+        addOutport("E2W_out");    
 
         numberAhead = 0;
         numMax = (int) (segLength+1) / carLength ;
@@ -56,7 +61,7 @@ public class RoadSegment extends ViewableAtomic {
 
         addInport("numberAhead");
         addInport("in");
-        addInport("collectIn");
+        // addInport("collectIn");
         addOutport("number");
         addOutport("out");
         addOutport("observationOut");
@@ -105,9 +110,17 @@ public class RoadSegment extends ViewableAtomic {
         }
 
         for (int i = 0; i < x.getLength(); i++) {
-            if (messageOnPort(x, "in", i)) {
+
+            //In specific time, it should only have one direction passing car in this segment 
+            if (messageOnPort(x, "W2E_in", i)) {
                 // comes with posn & speed
-                Vehicle veh = (Vehicle) x.getValOnPort("in", i);
+                Vehicle veh = (Vehicle) x.getValOnPort("W2E_in", i);
+                veh.setPosition(0);
+                listVehicles.add(veh); // add all vehicles  before updating
+            }
+            if (messageOnPort(x, "E2W_in", i)) {
+                // comes with posn & speed
+                Vehicle veh = (Vehicle) x.getValOnPort("E2W_in", i);
                 veh.setPosition(0);
                 listVehicles.add(veh); // add all vehicles  before updating
             }
@@ -144,18 +157,26 @@ public class RoadSegment extends ViewableAtomic {
         if (!listVehicles.isEmpty()) {
             // schedule the next vehicle
             updateSpeed();
-            holdIn("active", getNextPassingTime());
+            String VehicleDirection = "";
+            Vehicle firstVehicle = (Vehicle) listVehicles.get(0);
+            VehicleDirection = firstVehicle.getDirection();
+            holdIn(VehicleDirection + "_active", getNextPassingTime());
         } else
             passivate();
     }
 
     public message out() {
         message m = new message();
+        
         if (phaseIs("active") && !listVehicles.isEmpty()) {
             entity veh =  listVehicles.remove(0);
-            curVehicle = veh;
+            
+            curVehicle =(Vehicle) veh;
             if (random.nextDouble()<EndRoadSplitRate) {
-                m.add(makeContent("out", veh));
+                if(((Vehicle) veh).getDirection().equals("E2W"))
+                m.add(makeContent("E2W_out", veh));
+                else
+                m.add(makeContent("W2E_out", veh));
                 m.add(makeContent("number", new intEnt(listVehicles.size())));
                 isSplit = false;
             } else {

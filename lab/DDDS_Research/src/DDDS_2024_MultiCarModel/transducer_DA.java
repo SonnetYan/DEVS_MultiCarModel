@@ -83,7 +83,7 @@ public class transducer_DA extends ViewableAtomic{
 					eastSideQueue=ent.eastSideQueue;
 					carPassingTime_mean=ent.carPassingTime;
 										
-					stateDataReceived= true; 
+					stateDataReceived = true; 
 					
 						passivate();
 				}
